@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Laboratory 2.1</title>
+<style type="text/css">
+    table {
+        border: 1px solid black;
+        width: 60px;
+        height: 30px;
+        }
+</style>
+</head>
+<body>
+<form>
+<label>Last Name: </label>
+<input type="text" id="lname"> 
+<label>First Name: </label>
+<input type="text" id="name"><br><br>
+<label>Section: </label>
+<input type="text" id="Section">
+<label>Year:</label>
+ <input type="number" id="Year">
+<hr>
+<label>Quiz:</label>
+<input type="number" id="Quiz"><br><br>
+<label>Assignment: </label>
+<input type="number" id="Assignment"> <br><br>
+<label>Recitation: </label>
+<input type="number" id="Recitation"><br><br>
+<label>Term Exam: </label>
+<input type="number" id="TermExam"><br><br>
+<button type="button" onclick="computed()"> Show Computer Grades</button>
+<P id="haha">Name: (Lastname, Firstname)</P>
+<p id="hehe">Class:</p>
+<table>
+    <label>Quiz:</label><br>
+    <td id="hihi"></td>
+</table>
+<br>
+<table>
+    <label>Assignment:</label>
+    <td id="hoho"></td>
+    </table><br>
+    <table>
+        <label>Recitation: </label>
+        <td id="huhu"></td>
+    </table>
+    <br>
+    <table>
+        <label>TermExam: </label>
+        <td id="hahi"></td>
+    </table>
+
+</form>
+<script text="text/javascript">
+function computed() {
+    var a,b,c, d, e, f, g, h,i,j,k,l;
+     a=document.getElementById("name").value;
+     b=document.getElementById("lname").value;
+     c=document.getElementById("Section").value;
+     d=document.getElementById("Year").value;
+     e=document.getElementById("Quiz").value;
+     f=document.getElementById("Assignment").value;
+     g=document.getElementById("Recitation").value;
+     h=document.getElementById("TermExam").value;
+    
+     document.getElementById ("haha").innerHTML = "Name: (Last name, First Name)" + b + " , " + a ; 
+     document.getElementById ("hehe").innerHTML = "Class: " + d + "-" + c;
+     document.getElementById("hihi").innerHTML= e;
+     document.getElementById("hoho").innerHTML= f;
+     document.getElementById("huhu").innerHTML= g;
+     document.getElementById("hahi").innerHTML= h;
+    }
+    
+
+</script>
+</body>
+</html>
+
